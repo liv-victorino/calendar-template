@@ -1,7 +1,6 @@
 // Replace with your API key and Calendar ID
 const API_KEY = 'AIzaSyClBnzW9Cp8xjvswlGSS_P_Yq6iiEPazEs';
-const CALENDAR_ID = 'a32c726588b994f14f5fc087d91f7f292e7f33fc83b7a29fb92d1ae127572e1b@group.calendar.google.com';
-
+const CALENDAR_ID = 'b0720a5a16ff09474fe54e53d63d25aac6d1a9cf76898795d33d8c20494986da@group.calendar.google.com'
 function handleClientLoad() {
   gapi.load('client', () => {
     gapi.client.init({
@@ -40,25 +39,25 @@ function displayEvents(events) {
   if (events.length > 0) {
     events.forEach(event => {
 
-
-
-
       const eventItem = document.createElement('div');
       const summary = event.summary || "No Title";
       //const image = "https://show-bucket-1.s3.us-east-2.amazonaws.com/band.jpg"
       //console.log(image);
       const description = event.description || '';
       const formattedDate = formatDate(event.start.dateTime);
+      const ticketLink = event.location;
       eventItem.innerHTML = 
         `<div class="event">
                 <div class="event-details">
                     <div style="font-size:25px;font-weight:bold">${summary}</div>
-                    <span style="font-size:20px;">${description}</span>
+                    <span style="font-size:12px;">${description}</span>
                     <div style="font-size:15px;">${formattedDate.monthDay}</div>
                     <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
                     <div style="font-size:15px;">21+, $10 cash at door</div>
                 </div>
+                <a href="${ticketLink}"><button class="ticket-button">BUY TICKETS</button></a>
             </div>`
+      
       eventsList.appendChild(eventItem);
     });
   } else {

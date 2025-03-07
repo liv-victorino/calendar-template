@@ -5,6 +5,20 @@
     margin-left:35px;
     
 }
+
+.ticket-button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    height: 70px;
+    width:150px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
 html {
     scroll-behavior: smooth;
   }
@@ -19,9 +33,13 @@ body{
 .event{
     padding-bottom: 30px;
 }
+.event-details{
+    margin-bottom: 20px;
+}
 .event-details div{
     padding: 5px 0 0 0;
 }
+
 #rating{
     max-width:100px;
     margin-bottom: 15px;
@@ -272,7 +290,9 @@ a{
 }
 
 @media only screen and (min-width: 1074px){
-
+    .event-details{
+        max-width: 500px;
+    }
     .services-outline-heading{
         font-size: 35px;
     }

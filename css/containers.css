@@ -9,7 +9,11 @@ body{
     margin: auto;
     max-width: 700px;
 }
+#events-list{
+    margin-top:30px;
+}
 .event{
+    height:300px;
     display: flex;
     flex-direction: column;
 }
@@ -130,7 +134,14 @@ body{
 }
 
 @media only screen and (min-width: 1074px){
+    .event{
+        height:200px;
 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     .info-cell{
         flex-direction: column;
 
