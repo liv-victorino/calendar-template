@@ -57,7 +57,7 @@ function displayEvents(events) {
                             <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
                             <div style="font-size:15px;">21+, $10 cash at door</div>
                         </div>
-                        <div style="font-size:14px;">${description}</div>
+                        <div class="description" style="font-size:14px;">${description}</div>
                     </div>
                 </div>
                 

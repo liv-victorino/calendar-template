@@ -22,7 +22,9 @@
 html {
     scroll-behavior: smooth;
   }
-
+.description{
+    padding:15px 0 15px 0;
+}
 body{
     font-size: 16px;
 }
@@ -31,7 +33,7 @@ body{
     margin-right:50px;
 }
 .event{
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .basic-details div{
