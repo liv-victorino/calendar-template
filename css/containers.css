@@ -12,8 +12,11 @@ body{
 #events-list{
     margin-top:30px;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+}
 .event{
-    height:300px;
     display: flex;
     flex-direction: column;
 }
@@ -109,6 +112,7 @@ body{
         max-width:700px;
         margin:auto;
     }
+
     .info-cell{
         display:flex;
         flex-direction: column;
@@ -135,17 +139,20 @@ body{
 
 @media only screen and (min-width: 1074px){
     .event{
-        height:200px;
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom:30px;
+        ;
     }
     .info-cell{
         flex-direction: column;
 
     
+    }
+    .info{
+        flex-direction: row;
     }
     .testimonial-text{
         height: 100px;

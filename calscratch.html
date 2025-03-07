@@ -12,15 +12,19 @@
     <div class="container">
         <div class="event-container content">
             <div class="event">
-
                 <div class="event-details">
-                    <div style="font-size:25px;font-weight:bold">BEAUTIFUL FREAKS</div>
-                    <div style="font-size:20px;">La Fonda, Liv Victorino</div>
-                    <div style="font-size:15px;">Feb 23</div>
-                    <div style="font-size:15px;">Doors: 8:00 PM </div>
-                    <div style="font-size:15px;">21+, $10 cash at door</div>
+                    <div style="font-size:25px;font-weight:bold">${summary}</div>
+                    <div class="info">
+                        <div class="basic-details"> 
+                            <div style="font-size:15px;">${formattedDate.monthDay}</div>
+                            <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
+                            <div style="font-size:15px;">21+, $10 cash at door</div>
+                        </div>
+                        <div style="font-size:14px;">${description}</div>
+                    </div>
                 </div>
-                <a href="youtube.com"><button class="ticket-button">BUY TICKETS</button></a>
+                
+                <a href="${ticketLink}"><button class="ticket-button">BUY TICKETS</button></a>
             </div>
         </div>
     </div>

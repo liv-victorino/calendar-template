@@ -33,10 +33,8 @@ body{
 .event{
     padding-bottom: 30px;
 }
-.event-details{
-    margin-bottom: 20px;
-}
-.event-details div{
+
+.basic-details div{
     padding: 5px 0 0 0;
 }
 
@@ -292,7 +290,14 @@ a{
 @media only screen and (min-width: 1074px){
     .event-details{
         max-width: 500px;
+        flex-direction: row;
     }
+
+    .basic-details{
+        padding-right:40px;
+        width:300px
+    }
+
     .services-outline-heading{
         font-size: 35px;
     }

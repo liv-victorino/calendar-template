@@ -50,11 +50,17 @@ function displayEvents(events) {
         `<div class="event">
                 <div class="event-details">
                     <div style="font-size:25px;font-weight:bold">${summary}</div>
-                    <span style="font-size:12px;">${description}</span>
-                    <div style="font-size:15px;">${formattedDate.monthDay}</div>
-                    <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
-                    <div style="font-size:15px;">21+, $10 cash at door</div>
+                    <br>
+                    <div class="info">
+                        <div class="basic-details"> 
+                            <div style="font-size:15px;">${formattedDate.monthDay}</div>
+                            <div style="font-size:15px;">Doors: ${formattedDate.time} </div>
+                            <div style="font-size:15px;">21+, $10 cash at door</div>
+                        </div>
+                        <div style="font-size:14px;">${description}</div>
+                    </div>
                 </div>
+                
                 <a href="${ticketLink}"><button class="ticket-button">BUY TICKETS</button></a>
             </div>`
       
