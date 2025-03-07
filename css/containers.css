@@ -59,7 +59,10 @@ body{
     left:15%;
   }
 #banner-section{
+    height:700px;
     position: relative;
+    display:flex;
+    align-items: center;
 }
 
 .calendar-container{
@@ -87,10 +90,9 @@ body{
 
 #header-section{
     background-color: rgb(78, 78, 78);
-    /*background-image: linear-gradient(180deg, #1f1f1fa1,30%, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.158)), url(/images/building.jpg);*/
+    /*background-image: linear-gradient(180deg, #1f1f1fa1,30%, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.158)), url(/heights/building.jpg);*/
 }
 .banner-content{
-    
     padding: 60px 0px 60px 0px;
     width:100%;
     display:flex;
